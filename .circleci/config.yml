@@ -7,8 +7,5 @@ jobs:
     steps:
       - checkout # Lấy mã nguồn từ kho lưu trữ
       - run:
-          name: Install Dependencies
-          command: go get -v ./...
-      - run:
           name: Run Tests
           command: go test -v ./...
